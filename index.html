@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Timer</title>
+        <link rel="stylesheet" href="timer.css">
+    </head>
+    <body id="timer">
+        <div class="session-wrapper" data-wrapper="session">
+            <div class="progress" data-progress="session"></div>
+            <div class="round-wrapper" data-wrapper="round">
+                <div class="progress" data-progress="round"></div>
+                <div class="inner" data-status></div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="timer.js"></script>
+        <script>
+            $(function() {
+                $('#timer').timer("opencan.wav");
+            });
+        </script>
+    </body>
+</html>
